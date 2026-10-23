@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Autonomous aircraft securing software layer concept</title>
+  <desc id="desc">Architecture mock-up showing docking and device signals entering a Helios event and state service, human approval and exception handling, a partner securing device, manual fallback, and an audit record.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto"><path d="M0,0 L10,3 L0,6 Z" fill="#1f2937"/></marker>
+    <style>
+      .box{stroke:#1f2937;stroke-width:2;rx:14;ry:14}
+      .label{font:600 20px Arial,sans-serif;fill:#111827}
+      .small{font:16px Arial,sans-serif;fill:#374151}
+      .title{font:700 28px Arial,sans-serif;fill:#111827}
+      .line{stroke:#1f2937;stroke-width:3;fill:none;marker-end:url(#arrow)}
+      .dash{stroke:#6b7280;stroke-width:2;stroke-dasharray:8 8;fill:none;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1200" height="720" fill="#f9fafb"/>
+  <text x="50" y="55" class="title">Autonomous Docking: bounded software layer around a partner securing device</text>
+  <text x="50" y="88" class="small">Concept mock-up for fit discussion; physical securing remains with the device partner.</text>
+
+  <rect x="50" y="145" width="245" height="150" fill="#dbeafe" class="box"/>
+  <text x="75" y="185" class="label">Docking and stand</text>
+  <text x="75" y="220" class="small">arrival / stand state</text>
+  <text x="75" y="248" class="small">aircraft / turnaround signals</text>
+  <text x="75" y="276" class="small">operator context</text>
+
+  <rect x="50" y="405" width="245" height="150" fill="#fee2e2" class="box"/>
+  <text x="75" y="445" class="label">Partner device</text>
+  <text x="75" y="480" class="small">wheel securing mechanism</text>
+  <text x="75" y="508" class="small">device health / sensors</text>
+  <text x="75" y="536" class="small">secure / release feedback</text>
+
+  <rect x="390" y="205" width="300" height="290" fill="#dcfce7" class="box"/>
+  <text x="425" y="250" class="label">Helios event/state service</text>
+  <text x="425" y="292" class="small">sequence and interlock checks</text>
+  <text x="425" y="320" class="small">human approval gate</text>
+  <text x="425" y="348" class="small">exception and stop state</text>
+  <text x="425" y="376" class="small">manual takeover state</text>
+  <text x="425" y="404" class="small">source, time, reason, approver</text>
+  <text x="425" y="452" class="small">outbound command only after approval</text>
+
+  <rect x="785" y="145" width="330" height="150" fill="#fef3c7" class="box"/>
+  <text x="820" y="185" class="label">Operator console</text>
+  <text x="820" y="220" class="small">current state and reason</text>
+  <text x="820" y="248" class="small">approve secure / release</text>
+  <text x="820" y="276" class="small">acknowledge exception</text>
+
+  <rect x="785" y="405" width="330" height="150" fill="#ede9fe" class="box"/>
+  <text x="820" y="445" class="label">Audit and evidence</text>
+  <text x="820" y="480" class="small">immutable event trail</text>
+  <text x="820" y="508" class="small">approval and exception records</text>
+  <text x="820" y="536" class="small">validation export</text>
+
+  <path d="M295 220 C335 220 345 260 390 270" class="line"/>
+  <path d="M295 470 C335 470 350 420 390 410" class="line"/>
+  <path d="M690 270 C735 270 745 220 785 220" class="line"/>
+  <path d="M785 265 C745 265 735 315 690 315" class="line"/>
+  <path d="M690 430 C735 430 745 480 785 480" class="line"/>
+  <path d="M785 520 C745 520 735 455 690 455" class="dash"/>
+  <path d="M390 455 C345 455 335 510 295 510" class="dash"/>
+  <text x="310" y="185" class="small">signals in</text>
+  <text x="300" y="595" class="small">manual fallback remains available</text>
+  <text x="700" y="185" class="small">state / approval</text>
+  <text x="695" y="580" class="small">evidence out</text>
+</svg>
